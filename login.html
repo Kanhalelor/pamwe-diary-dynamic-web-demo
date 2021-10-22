@@ -4,15 +4,17 @@
     <title>Pamwe Diary</title>
     <meta charset="UTF-8" />
   </head>
-  <link rel="stylesheet" href="./src/connect.css" />
+  <link rel="stylesheet" href="./src/login.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
     rel="stylesheet"
   />
-
   <body>
+    <?php
+    include("./login.php")
+    ?>
     <div id="app">
       <div id="home" class="main-nav">
         <div class="title">
@@ -25,11 +27,17 @@
           </li>
         </ul>
       </div>
-
-      <div class="contacts" id="contact">
-        <spam>Call: +264 61 231 654</spam>
-        <spam>Email: info@pamwedairy.com.na</spam>
-        <spam>Visit US: 123 Folklore Avenue, Windhoek</spam>
+      <form action="#" method="post">
+        <label for="Name">Username:</label>
+        <input type="text" name="username" required />
+        <label for="Name">Password:</label>
+        <input type="password" name="password" required />
+        <button type="submit">Login</button>
+      </form>
+      <div class="register">
+        <p class="register-text">
+          Don't have an Account? <a href="#">Register</a>
+        </p>
       </div>
       <footer>
         <spam class="footer-text">
