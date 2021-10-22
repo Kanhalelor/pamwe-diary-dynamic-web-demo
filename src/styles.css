@@ -1,0 +1,133 @@
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(270deg, #e0e0e0, #80c0c2);
+  font-family: "Architects Daughter", cursive;
+
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 300px;
+}
+
+/* selectors */
+.app {
+  display: flex;
+  width: 100%;
+}
+.main-nav {
+  height: 16vh;
+  background: #fcd707;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav .title {
+  margin-left: 1rem;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.main-nav li {
+  margin: 0 1rem;
+}
+.main-nav li a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  color: blue;
+  border-radius: 5px;
+}
+.active {
+  background: #e0e0e0;
+}
+.main-nav li a:hover {
+  transition: background 0.3s linear;
+  background: #e0e0e0;
+}
+.heading {
+  margin-top: 3rem;
+}
+.buss-desc {
+  padding: 1rem 0;
+  margin-left: 2rem;
+  font-size: 20px;
+}
+.heading .product-header {
+  font-size: 36px;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 2rem;
+}
+.products {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  margin: 1rem 2rem;
+  flex-flow: column;
+  background: #f5f4f2;
+
+  border-radius: 5px;
+  box-shadow: #0000004d 0 1px 3px;
+  transition: scale 0.3s ease-in-out;
+}
+.product:hover {
+  transform: scale(1.01);
+}
+.product-info {
+  border-top: 1px solid #e0e0e0;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.product-info .product-details {
+  padding: 0.3rem;
+  margin: 0.4rem;
+  border-radius: 5px;
+  transition: background 0.3s linear;
+}
+.product-info .product-details:hover {
+  cursor: pointer;
+  background: #fcd707;
+  font-weight: 600;
+}
+.contacts {
+  margin-top: 3rem;
+  height: calc(100vh - 80vh);
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.contacts spam {
+  text-align: left;
+  font-size: x-large;
+  font-weight: 600;
+}
+footer {
+  margin-top: 3rem;
+  border-top: 2px solid #e0e0e0;
+  height: calc(100vh - 80vh);
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+}

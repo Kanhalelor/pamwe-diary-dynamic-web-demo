@@ -1,0 +1,124 @@
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(270deg, #e0e0e0, #80c0c2);
+  font-family: "Architects Daughter", cursive;
+
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 300px;
+}
+
+/* selectors */
+.app {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.main-nav {
+  height: calc(100vh - 88vh);
+  background: #fcd707;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.main-nav .title {
+  margin-left: 1rem;
+  font-size: xx-large;
+  font-weight: 600;
+}
+.main-nav li {
+  margin: 0 1rem;
+}
+.main-nav li a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  color: blue;
+  border-radius: 5px;
+}
+.active {
+  background: #e0e0e0;
+}
+.main-nav li a:hover {
+  transition: background 0.3s linear;
+  background: #e0e0e0;
+}
+
+/* form styling */
+
+form {
+  display: flex;
+  flex-flow: column;
+  height: calc(100vh - 60vh);
+  width: 50%;
+  align-items: center;
+
+  justify-self: center;
+
+  padding-top: 3rem;
+
+  border-radius: 5px;
+  box-shadow: #0000004d 0 1px 3px;
+  margin: 0 auto;
+}
+input {
+  width: 50%;
+  padding: 0.5rem;
+  background: #e0e0e0;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+button {
+  outline: none;
+  border: none;
+  box-shadow: #0000004d 0 1px 3px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #fcd707;
+
+  transition: background 0.3s linear;
+  font-weight: 600;
+}
+button:hover {
+  background: #e0e0e0;
+}
+/* register div */
+.register {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0.3rem;
+  margin: 0 auto;
+}
+footer {
+  margin-top: 3rem;
+  border-top: 2px solid #e0e0e0;
+  height: calc(100vh - 80vh);
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 1rem 0;
+}
